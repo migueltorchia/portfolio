@@ -31,6 +31,11 @@ h1 {
     font-size: 1.2rem;
 }
 
+.btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+}
+
 .texto-negro {
     color: #000;
 }
@@ -197,3 +202,21 @@ h1 {
 .proyecto:hover img {
     opacity: 0.2;
 }
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: #000;
+    font-size: 60px;
+    margin: 10px;
+}
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 18px;
+    }
+    overlay i {
+        font-size: 40px;
+    }
+}
+    
