@@ -20,11 +20,13 @@
     <!-- Titulo -->
     <title>Miguel Torchia | Desarrollo Web</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./img/icon.png">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -41,16 +43,16 @@
                 </a>
                 <ul class="navbar-nav d-flex justify-content-center align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Sobre mí</a>
+                        <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Proyectos</a>
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Testimonios</a>
+                        <a href="#testimonios" class="nav-link">Testimonios</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contacto</a>
+                        <a href="#contacto" class="nav-link">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -69,7 +71,7 @@
         </div>
     </section>
     <!-- Sobre mí -->
-    <section class="sobre-mi seccion-oscura">
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
         <div class="contenedor">
             <h2 class="seccion-titulo">Conoce a Miguel Torchia</h2>
             <p class="seccion-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, rerum aut,
@@ -129,7 +131,7 @@
         </div>
     </section>
     <!-- Proyectos -->
-    <section class="proyectos-recientes seccion-clara d-flex flex-column">
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
         <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
         <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
         <!-- Galeria de proyectos -->
@@ -251,7 +253,113 @@
             </button>
         </a>
     </section>
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+        <h2 class="seccion-titulo">Testimonios</h2>
+        <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+        <!-- Carousel -->
+        <div id="testimonios-carousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <img class="testimonio-img rounded-circle" src="./img/cliente1.svg" alt="Cliente 1">
+                        <p class="testimonio-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab enim porro laboriosam tenetur
+                            nemo consequatur omnis facere atque culpa
+                        </p>
+                        <div class="testimonio-info">
+                            <p class="client">Gino</p>
+                            <p class="cargo">Gerente de proyectos en Desarrollo Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="testimonio-img rounded-circle" src="./img/cliente2.svg" alt="Cliente 1">
+                        <p class="testimonio-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab enim porro laboriosam tenetur
+                            nemo consequatur omnis facere atque culpa
+                        </p>
+                        <div class="testimonio-info">
+                            <p class="client">Sophie</p>
+                            <p class="cargo">Gerente de proyectos en Desarrollo Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="testimonio-img rounded-circle" src="./img/cliente3.svg" alt="Cliente 1">
+                        <p class="testimonio-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab enim porro laboriosam tenetur
+                            nemo consequatur omnis facere atque culpa
+                        </p>
+                        <div class="testimonio-info">
+                            <p class="client">Martín</p>
+                            <p class="cargo">Gerente de proyectos en Desarrollo Web</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
 
+    <!-- Contacto -->
+    <section id="contacto" class="contact seccion-oscura">
+        <div class="container">
+            <div class="container rectangulo text-center d-flex justify-content-evenly">
+                <div class="row">
+                    <div class="col-12 col-md-4 seccion-titulo">
+                        Hablemos!
+                    </div>
+                    <div class="col-12 col-md-4 description">
+                        Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="mailto:miguel.torchia@gmail.com">
+                            <button type="button">
+                                Contacto
+                                <i class="bi bi-envelope-check-fill"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="./img/icon.png" alt="logo del portfolio">
+        <p class="footer-text text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://github.com/migueltorchia" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="mailto:miguel.torchia@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope"></i>
+            </a>
+        </div>
+        <div class="derechos-de-autor">Creado por Miguel Torchia (2022) &#169;</div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
